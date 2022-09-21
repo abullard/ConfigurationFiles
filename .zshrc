@@ -11,3 +11,6 @@ alias reload="source $HOME/.zshrc"
 # quick edit .shellrc files
 alias editsh="vim $HOME/.zshrc"
 # alias editsh="vim $HOME/.bashrc"
+
+# how to export new stuff to PATH
+export PATH=$PATH:/usr/local/bin
