@@ -7,6 +7,8 @@
   fk = !git fetch origin && git reset --hard origin/master
 # Let me change the previous commit
   amend = commit -a --amend
+# add patches for unstaged files
+  patch = add --patch
 # Log on file level
   filelog = log -u
 # Short name for previous alias
