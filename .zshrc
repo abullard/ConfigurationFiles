@@ -12,5 +12,8 @@ alias reload="source $HOME/.zshrc"
 alias editsh="vim $HOME/.zshrc"
 # alias editsh="vim $HOME/.bashrc"
 
+# generate a guid and copy to clipboard on OSX
+alias guid="uuidgen | tr '[:upper:]' '[:lower:]' | tr -d '\n' | pbcopy"
+
 # how to export new stuff to PATH
 export PATH=$PATH:/usr/local/bin
