@@ -1,5 +1,5 @@
 # ConfigurationFiles
-Private repository consisting of consistent dev. environment setup across machines
+Public repository consisting of consistent dev. environment setup across machines
 
 ### Install Homebrew (Apple)
 ---
