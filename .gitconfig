@@ -3,6 +3,10 @@
   la = "!git config -l | grep alias | cut -c 7-"
   co = checkout
   st = status
+  cob = checkout -b
+  del = branch -D
+  unstage = restore --staged
+  diffs = diff --staged
 # Set me back to the tip of master
   fk = !git fetch origin && git reset --hard origin/master
 # Let me change the previous commit

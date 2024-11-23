@@ -1,0 +1,144 @@
+{
+	// Place your snippets for typescript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"console log": {
+		"prefix": "cl",
+		"body": [
+			"console.log('AJB: $1: ', $1);",
+		],
+		"description": "Log output to console"
+	},
+	"TODO": {
+		"prefix": "ajb",
+		"body": [
+			"$LINE_COMMENT TODO AJB $CURRENT_MONTH/$CURRENT_DATE/$CURRENT_YEAR: ",
+		],
+		"description": ""
+	},
+	"Arrow function": {
+		"prefix": "arf",
+		"body": [
+			"($1) => {",
+			"\t$2",
+			"}",
+		],
+		"description": "add arrow function"
+	},
+	"It test": {
+		"prefix": "it",
+		"body": [
+			"it('$1', () => {",
+			"\t// arrange",
+			"\tconst param1: type1 = 'value1';",
+			"\tconst param2: type2 = 'value2';",
+			"\tconst param3: type3 = 'value3';",
+			"\t",
+			"\t// act",
+			"\tconst actual = unitUnderTestHere(param1, param2, param3);",
+			"\t", 
+			"\t// assert",
+			"\tconst expected = {};",
+			"\texpect(actual).toEqual(expected);",
+			"});",
+		],
+		"description": "add it test"
+	},
+	"Describe block": {
+		"prefix": "descr",
+		"body": [
+			"describe('', () => {",
+			"\t$2",
+			"});",
+		],
+		"description": "add describe block"
+	},
+	"BeforeEach block": {
+		"prefix": "bfe",
+		"body": [
+			"beforeEach(() => {",
+			"\t$2",
+			"});",
+		],
+		"description": "add beforeEach block"
+	},
+	"Random Guid": {
+		"prefix": "guid",
+		"body": [
+			"\"$UUID\""
+		],
+		"description": "generate a random v4 uuid"
+	},
+	"Bogus Assertion": {
+		"prefix": "bogus",
+		"body": [
+			"expect(true).toBeFalsy();"
+		],
+		"description": "insert a failing assertion."
+	},
+	"Not Implemented": {
+		"prefix": "notimpl",
+		"body": [
+			"throw new Error('Not implemented exception.');"
+		],
+		"description": "insert an error for a func that's not implemented"
+	},
+	"Const Function": {
+		"prefix": "constfunc",
+		"body": [
+			"const $1 = () => {",
+			"\t$2",
+			"};"
+		],
+		"description": "a const function implementation"
+	},
+	"Object Insertion": {
+		"prefix": "obj",
+		"body": [
+			"{",
+			"\tkey1: 'value1',",
+			"\tkey2: 'value2',",
+			"\tkey3: 'value3',",
+			"}"
+		],
+		"description": "insert a placeholder object"
+	},
+	"Const Object Insertion": {
+		"prefix": "constobj",
+		"body": [
+			"const $1: $2 = {",
+			"\tkey1: 'value1',",
+			"\tkey2: 'value2',",
+			"\tkey3: 'value3',",
+			"};"
+		],
+		"description": "insert a placeholder object"
+	},
+	// "Arrange, Act, Assert": {
+	// 	"prefix": "aaa",
+	// 	"body": [
+	// 		"// arrange",
+	// 		"const param1: type1 = 'value1';",
+	// 		"const param2: type2 = 'value2';",
+	// 		"const param3: type3 = 'value3';",
+	// 		"",
+	// 		"// act",
+	// 		"const actual = unitUnderTestHere(param1, param2, param3);",
+	// 		"", 
+	// 		"// assert",
+	// 		"const expected = {};",
+	// 		"expect(actual).toEqual(expected);",
+	// 	],
+	// 	"description": "insert arrange, act, assert for unit test"
+	// },
+}

@@ -1,0 +1,73 @@
+{
+  "http.proxySupport": "off",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Ubuntu (WSL)": {
+      "path": "C:\\windows\\System32\\wsl.exe",
+      "args": ["-d", "Ubuntu"]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "window.zoomLevel": 1,
+  "todo-tree.general.tags": ["// TODO AJB"],
+  "gitlens.defaultGravatarsStyle": "identicon",
+  "gitlens.currentLine.pullRequests.enabled": false,
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Earthbound - Zombie Threed",
+  "workbench.iconTheme": "vscode-icons",
+  "jest.runMode": "on-demand",
+  "vsicons.dontShowNewVersionMessage": true,
+  "jest.disabledWorkspaceFolders": [],
+  "search.searchEditor.reusePriorSearchConfiguration": true,
+  "search.showLineNumbers": true,
+  "terminal.integrated.scrollback": 10000,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.snippetSuggestions": "top",
+  "editor.stickyScroll.enabled": false,
+  "workbench.tree.enableStickyScroll": false,
+  "files.autoSave": "afterDelay",
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.codeLens.enabled": false,
+  "gitlens.blame.highlight.locations": ["gutter", "line"],
+  "gitlens.blame.format": "${author|15} - ${agoOrDateShort|4}",
+  "gitlens.blame.avatars": false,
+  "gitlens.defaultDateFormat": null,
+  "gitlens.defaultDateShortFormat": null,
+  "gitlens.hovers.enabled": false,
+  "gitlens.currentLine.format": "${author} - ${id}, ${date} • ${ message|25} ",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "security.allowedUNCHosts": ["wsl.localhost"],
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.openRepositoryInParentFolders": "never",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "pythonTestExplorer.testFramework": "unittest",
+  "explorer.compactFolders": false
+}
