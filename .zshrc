@@ -17,6 +17,12 @@ alias ll="ls -lha"
 alias reload="source $HOME/.zshrc"
 # alias reload="source $HOME/.bashrc"
 
+# use npm to list locally installed packages without deps
+alias npmlist="npm list --depth=0"
+
+# use npm to list globally installed packages without deps
+alias npmglist="npm -g list --depth=0"
+
 # quick edit .shellrc files
 alias editsh="vim $HOME/.zshrc"
 # alias editsh="vim $HOME/.bashrc"
