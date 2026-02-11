@@ -1,33 +1,32 @@
-# checkout last branch
-alias gc-="git checkout -"
-
-# git commit with message
-alias gcm='git commit -m'
-
-# git pull rebase
-alias gpr='git pull -r'
-
-# list all git aliai
-alias lsgit='alias | grep git'
-
-# long list all files with ll
+# --- bash
 alias ll="ls -lha"
+alias guid="guid"
+alias c="clear"
+alias accio="alias | grep"
+alias editsh="vim ~/.zshrc"
+alias reload="source ~/.zshrc; clear"
 
-# reload term with zsh/bash updates
-alias reload="source $HOME/.zshrc"
-# alias reload="source $HOME/.bashrc"
-
-# use npm to list locally installed packages without deps
+# --- npm/pnpm
+alias npmview="npm view"
 alias npmlist="npm list --depth=0"
+alias akio="clear; npx akio -d"
 
-# use npm to list globally installed packages without deps
-alias npmglist="npm -g list --depth=0"
+# --- git
+alias gc-="git checkout -"
+alias gpr="git pull -r"
+alias gcm="git commit -m"
+alias gpu="git push"
+alias gap="git add . --patch"
+# alias changes='function _changes(){ git diff $1^1 $1 > changes.diff };_changes'
 
-# quick edit .shellrc files
-alias editsh="vim $HOME/.zshrc"
-# alias editsh="vim $HOME/.bashrc"
+# --- AI
+alias codex="codex --sandbox read-only"
+alias copilot="copilot --banner"
 
-# generate a guid and copy to clipboard on OSX
+# --- bash script aliases
+alias lsf="ls $HOME/Developer/zsh/functions"
+
+# --- MacOS only
 alias guid="uuidgen | tr '[:upper:]' '[:lower:]' | tr -d '\n' | pbcopy"
 
 # example of pulling in a bash function from another file:
